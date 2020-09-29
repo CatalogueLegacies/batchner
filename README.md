@@ -20,6 +20,7 @@ As is, the script will run Stanford NER on every text (.txt) file within a folde
 ├──🗂 stanford-ner-2018-10-16
 ├──🗂 project folder
 |   └──batchner.sh
+|   └──batchner_markup.sh
 |   └──file1.txt
 |   └──file2.txt
 |   └──file3.txt
@@ -37,6 +38,8 @@ Once all of your files are properly arranged as above:
 2. Navigate to the folder containing these files (using `$ cd`) [if you have a folder 'project' on the Desktop, type (without the $) `$ cd Desktop/project`.]
 3. Type `$ sh batchner.sh`
 This will take a bit to run (4-5 files will likely take about a minute), but will print all of the results into a file in the same folder called `entities.csv`
+4. Type `$ sh batchner_markup.sh`
+This will take longer to run, but will print to file two .txt files, one for all files where people are found and one for all files where places are found, each marked up with `/PERSON` and `/LOCATION` respectively.
 
 ### Windows
 Download and install [Cygwin](https://www.cygwin.com/install.html). Once your files are arranged as above:
@@ -45,6 +48,3 @@ Download and install [Cygwin](https://www.cygwin.com/install.html). Once your fi
 3. Navigate to the folder containing these files (using `$ cd`) [if you have a folder 'project' on the Desktop, type (without the $) `$ cd /cygdrive/c/Users/YOUR-USERNAME/Desktop/project`.]
 4. Type `$ sh batchner.sh`
 This will take a bit to run (4-5 files will likely take about a minute), but will print all of the results into a file in the same folder called `entities.csv`
-
-## Notes
-As new versions of Stanford NER come out, the filepath will change and will need to be updated
