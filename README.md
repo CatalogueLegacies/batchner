@@ -51,4 +51,4 @@ This will take a bit to run (4-5 files will likely take about a minute), but wil
 
 ### Credit
 
-Goes to @brandontlocke.
+Goes to [@brandontlocke](https://github.com/brandontlocke).
